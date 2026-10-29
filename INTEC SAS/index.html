@@ -1,0 +1,565 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="INTEC S.A.S. - Mantenimiento, soporte en sistemas teleinformáticos y reutilización tecnológica sostenible.">
+
+    <meta name="keywords"
+        content="soporte TI, mantenimiento de computadores, reciclaje electrónico, economía circular, INTEC SAS">
+
+    <title>INTEC S.A.S. - Inicio</title>
+
+
+    <!-- ==================================================
+         BOOTSTRAP 5
+    =================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- ==================================================
+         FONT AWESOME
+         Aquí están los iconos del proyecto
+    =================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    <!-- ==================================================
+         GOOGLE FONTS
+    =================================================== -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- ==================================================
+         ESTILOS DEL PROYECTO
+    =================================================== -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="css/animations.css">
+
+
+    <!-- ==================================================
+         PROTECCIÓN DEL BOTÓN CONTÁCTENOS
+         NO AFECTA LOS DEMÁS BOTONES
+    =================================================== -->
+
+    <script>
+
+        document.addEventListener("click", function (event) {
+
+            const botonContacto =
+                event.target.closest("#btn-contacto-inicio");
+
+            if (botonContacto) {
+
+                event.preventDefault();
+
+                event.stopPropagation();
+
+                window.location.href = "./contacto.html";
+
+            }
+
+        }, true);
+
+    </script>
+
+</head>
+
+
+<body>
+
+
+    <!-- ==================================================
+         LOADER
+    =================================================== -->
+
+    <div id="loader">
+
+        <div class="spinner"></div>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         NAVEGACIÓN
+    =================================================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+        <div class="container">
+
+
+            <!-- LOGO -->
+
+            <a
+                class="navbar-brand fw-bold"
+                href="index.html">
+
+                <i class="fa-solid fa-microchip me-2"></i>
+
+                INTEC <span>S.A.S.</span>
+
+            </a>
+
+
+
+            <!-- BOTÓN MENÚ MÓVIL -->
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Abrir menú">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+
+            <!-- MENÚ -->
+
+            <div
+                class="collapse navbar-collapse justify-content-end"
+                id="navbarNav">
+
+                <ul class="navbar-nav">
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link active"
+                            href="index.html">
+
+                            Inicio
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="nosotros.html">
+
+                            Nosotros
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="servicios.html">
+
+                            Servicios
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="grupo.html">
+
+                            Grupo
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="proyectos.html">
+
+                            Proyectos
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="portafolio.html">
+
+                            Portafolio
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="preguntas.html">
+
+                            Preguntas Frecuentes
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="contacto.html">
+
+                            Contacto
+
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ==================================================
+         HERO
+    =================================================== -->
+
+    <header class="hero-section text-center">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+
+                <!-- TEXTO -->
+
+                <div class="col-lg-7 text-lg-start">
+
+
+                    <h1 class="display-4 fw-bold mb-3">
+
+                        Soluciones Tecnológicas y Sostenibilidad
+
+                    </h1>
+
+
+                    <p class="lead mb-4">
+
+                        Empresa creada bajo el programa Técnico en Sistemas
+                        Teleinformático del Centro de Electricidad y Automatización
+                        Industrial, especializada en mantenimiento preventivo,
+                        correctivo y reutilización tecnológica.
+
+                    </p>
+
+
+
+                    <!-- BOTÓN PROYECTO -->
+
+                    <a
+                        href="proyectos.html"
+                        class="btn btn-primary me-2">
+
+                        Ver Proyecto Productivo
+
+                    </a>
+
+
+
+                    <!-- ==================================================
+                         BOTÓN CONTÁCTENOS
+                         YA CORREGIDO
+                    =================================================== -->
+
+                    <a
+                        href="./contacto.html"
+                        id="btn-contacto-inicio"
+                        class="btn btn-success">
+
+                        Contáctenos
+
+                    </a>
+
+
+                </div>
+
+
+
+                <!-- IMAGEN PRINCIPAL DEL BANNER -->
+
+                <div class="col-lg-5 mt-4 mt-lg-0">
+
+                    <img
+                        src="img/banner-principal.jpg"
+                        alt="Banner principal INTEC S.A.S."
+                        class="img-fluid rounded-4 shadow">
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==================================================
+         PILARES CORPORATIVOS
+         CORREGIDO:
+         YA NO HAY IMÁGENES ROTAS
+         AHORA SON ICONOS
+    =================================================== -->
+
+    <section class="py-5 bg-light">
+
+        <div class="container">
+
+
+            <!-- TÍTULO -->
+
+            <div class="row text-center mb-5">
+
+                <div class="col-12">
+
+                    <h2 class="fw-bold text-primary">
+
+                        Nuestros Pilares Corporativos
+
+                    </h2>
+
+
+                    <p class="text-muted">
+
+                        Compromiso con la innovación, la calidad y el medio ambiente.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TARJETAS -->
+
+            <div class="row g-4">
+
+
+                <!-- ==================================================
+                     PILAR 1
+                =================================================== -->
+
+                <div class="col-md-4">
+
+                    <div
+                        class="card p-4 h-100 text-center shadow-sm">
+
+
+                        <!-- ICONO -->
+
+                        <div class="mb-3 text-primary fs-1">
+
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+
+                        </div>
+
+
+                        <h4 class="h5 fw-bold">
+
+                            Mantenimiento Preventivo y Correctivo
+
+                        </h4>
+
+
+                        <p class="text-muted">
+
+                            Diagnóstico y restauración avanzada de equipos de
+                            cómputo y redes institucionales.
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ==================================================
+                     PILAR 2
+                =================================================== -->
+
+                <div class="col-md-4">
+
+                    <div
+                        class="card p-4 h-100 text-center shadow-sm">
+
+
+                        <!-- ICONO -->
+
+                        <div class="mb-3 text-primary fs-1">
+
+                            <i class="fa-solid fa-arrows-rotate"></i>
+
+                        </div>
+
+
+                        <h4 class="h5 fw-bold">
+
+                            Reutilización Tecnológica
+
+                        </h4>
+
+
+                        <p class="text-muted">
+
+                            Extensión de la vida útil de componentes electrónicos
+                            para reducir el impacto ambiental de los residuos
+                            tecnológicos.
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ==================================================
+                     PILAR 3
+                =================================================== -->
+
+                <div class="col-md-4">
+
+                    <div
+                        class="card p-4 h-100 text-center shadow-sm">
+
+
+                        <!-- ICONO -->
+
+                        <div class="mb-3 text-primary fs-1">
+
+                            <i class="fa-solid fa-network-wired"></i>
+
+                        </div>
+
+
+                        <h4 class="h5 fw-bold">
+
+                            Sistemas Teleinformáticos
+
+                        </h4>
+
+
+                        <p class="text-muted">
+
+                            Soporte, mantenimiento y optimización de sistemas y
+                            redes para garantizar un funcionamiento eficiente.
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         FOOTER
+    =================================================== -->
+
+    <footer class="bg-dark text-white py-4 mt-5">
+
+        <div class="container text-center">
+
+            <p class="mb-0">
+
+                &copy; 2026 INTEC S.A.S.
+
+                Todos los derechos reservados.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ==================================================
+         BOOTSTRAP JAVASCRIPT
+    =================================================== -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+
+    <!-- ==================================================
+         JAVASCRIPT DEL PROYECTO
+    =================================================== -->
+
+    <script src="js/main.js"></script>
+
+    <script src="js/animations.js"></script>
+
+
+</body>
+
+</html>
+```

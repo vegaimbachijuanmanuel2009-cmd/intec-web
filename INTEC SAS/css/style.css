@@ -1,0 +1,207 @@
+:root {
+  --primary-dark: #0A2540;
+  --tech-blue: #1565C0;
+  --electric-blue: #2196F3;
+  --recycle-green: #2E7D32;
+  --light-green: #43A047;
+  --dark-gray: #333333;
+  --light-gray: #F8F9FA;
+  --white: #FFFFFF;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  color: var(--dark-gray);
+  background-color: var(--white);
+  line-height: 1.25;
+  overflow-x: hidden;
+}
+
+/* Loader corporativo */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255,255,255,0.2);
+  border-top-color: var(--electric-blue);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Barra de Navegación */
+.navbar {
+  background-color: var(--primary-dark) !important;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar-brand span {
+  color: var(--electric-blue);
+}
+
+.nav-link {
+  color: var(--white) !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--electric-blue) !important;
+}
+
+/* Hero Banners */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-dark), var(--tech-blue));
+  color: var(--white);
+  padding: 100px 0;
+}
+
+.breadcrumb-custom {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.breadcrumb-custom a {
+  color: var(--electric-blue);
+  text-decoration: none;
+}
+
+/* Tarjetas y Contenedores */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(--light-gray);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(33, 150, 243, 0.15);
+}
+
+/* Placeholders de imágenes */
+.img-placeholder {
+  width: 100%;
+  height: 220px;
+  background-color: #E2E8F0;
+  border: 2px dashed #CBD5E1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #64748B;
+  font-weight: 600;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+  padding: 20px;
+}
+
+.img-placeholder i {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: var(--tech-blue);
+}
+
+/* Botones Modernos */
+.btn-primary {
+  background-color: var(--tech-blue);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--electric-blue);
+}
+
+.btn-success {
+  background-color: var(--recycle-green);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-weight: 600;
+}
+
+.btn-success:hover {
+  background-color: var(--light-green);
+}
+
+/* Botón Volver Arriba */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+  background-color: var(--recycle-green);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+  cursor: pointer;
+}
+
+/* Footer Completo */
+footer {
+  background-color: var(--primary-dark);
+  color: var(--white);
+  padding: 50px 0 20px 0;
+}
+
+footer h5 {
+  color: var(--electric-blue);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+footer ul li a {
+  color: #CBD5E1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: var(--white);
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  background-color: rgba(255,255,255,0.1);
+  color: var(--white);
+  border-radius: 50%;
+  margin-right: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: var(--electric-blue);
+}
